@@ -1,0 +1,47 @@
+###Create new user
+
+GET http://localhost:3000/auth/colors/red
+
+###Create new user
+
+GET http://localhost:3000/auth/colors
+
+###Create new user
+
+GET http://localhost:3000/auth/whoami
+
+###Create new user
+
+POST http://localhost:3000/auth/signup
+content-type: application/json
+
+{
+    "email": "999@gmail.com",
+    "password": "mypassword"
+}
+###Sign In
+POST http://localhost:3000/auth/signin
+content-type: application/json
+
+{
+    "email": "999@gmail.com",
+    "password": "mypassword"
+}
+
+### Find by id
+GET http://localhost:3000/auth/4
+
+### Find by id
+GET http://localhost:3000/auth?email=888@gmail.com
+
+### Find by id
+DELETE http://localhost:3000/auth/3
+
+###
+PATCH http://localhost:3000/auth/4
+content-type: application/json
+
+{
+    "email": "888@gmail.com",
+    "password": "newpass"
+}
