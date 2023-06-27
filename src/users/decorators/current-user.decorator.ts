@@ -6,7 +6,7 @@ export const CurrentUser = createParamDecorator(
     console.log(request.session.userId);
     console.log(request.session.email);
     console.log(request.session);
-    console.log(request.currentUser);
+    //console.log(request.currentUser);
     return 'hi there!';
   },
 );
